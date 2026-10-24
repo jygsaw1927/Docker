@@ -1,0 +1,27 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: usuarios
+    url: http://usuarios:8000
+    routes:
+      - name: usuarios-route
+        paths:
+          - /usuarios
+        strip_path: true
+
+  - name: productos
+    url: http://productos:8000
+    routes:
+      - name: productos-route
+        paths:
+          - /productos
+        strip_path: true
+
+  - name: pedidos
+    url: http://pedidos:8000
+    routes:
+      - name: pedidos-route
+        paths:
+          - /pedidos
+        strip_path: true
